@@ -1,0 +1,35 @@
+﻿/* Navbar Styles */
+.navbar {
+    background-color: #181818; /* Dark Gray */
+    padding: 15px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.navbar-logo {
+    color: #E0E0E0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Navigation Links */
+.navbar-links a {
+    color: #E0E0E0; /* Light Gray */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+/* Hover and Active Effects */
+.navbar-links a:hover {
+    color: #4DB8FF; /* Light Blue */
+}
+
+.navbar-links a.active {
+    color: #FFD700; /* Gold */
+    font-weight: bold;
+}

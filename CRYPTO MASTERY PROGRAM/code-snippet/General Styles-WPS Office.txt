@@ -1,0 +1,82 @@
+﻿/* General Styles */
+.hero {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    justify-content: space-between; /* Pushes text left and image right */
+    height: 100vh;
+    padding: 0 10%;
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0; /* Light gray text */
+}
+
+/* Left Side - Text */
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #B0B0B0; /* Lighter gray for contrast */
+}
+
+/* Buttons */
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #45A049;
+}
+
+.btn-secondary {
+    background-color: #4DB8FF; /* Blue */
+    color: white;
+    margin-left: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #3BA6E5;
+}
+
+/* Right Side - Image */
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,279 @@
+body{
+    background-color: #121212;
+    color: #e0e0e0;
+    
+}   
+
+*{
+    box-sizing: border-box;
+}
+
+/* a.main-link{
+    text-decoration: none;
+    color: #e0e0e0;
+    margin-left: 70px;
+    display: block;
+    float: left;
+    padding:16px 5px 16px 5px;  
+}
+
+a.main-link:hover{
+    color: #ffffff;
+    background-color: #000000;
+    transition: 0.3s;
+} */
+
+/* Navbar Styles */
+.navbar {
+    background-color: #181818; /* Dark Gray */
+    padding: 15px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    margin-top: 0;
+}
+
+/* Logo */
+.navbar-logo {
+    color: #E0E0E0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: gold;
+}
+
+/* Navigation Links */
+.main-link  {
+    color: #E0E0E0; /* Light Gray */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+/* Hover and Active Effects */
+.main-link:hover {
+    color: gold; /* Light Blue */
+}
+
+.main-link:active {
+    color: #FFD700; /* Gold */
+    font-weight: bold;
+}
+
+
+/* General Styles */
+.hero {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    justify-content: space-between; /* Pushes text left and image right */
+    height: 100vh;
+    padding: 0 10%;
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0; /* Light gray text */
+}
+
+/* Left Side - Text */
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #B0B0B0; /* Lighter gray for contrast */
+}
+
+/* Buttons */
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #45A049;
+}
+
+.btn-secondary {
+    background-color: #4DB8FF; /* Blue */
+    color: white;
+    margin-left: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #3BA6E5;
+}
+
+/* Right Side - Image */
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 800px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: auto;
+        padding: 50px 10%;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .hero-image{
+        margin-top: 20px;
+    }    
+
+    .navbar {
+        background-color: #181818; /* Dark Gray */
+        padding: 15px 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    a.main-link{
+        text-decoration: none;
+        color: #e0e0e0;
+        margin-left: -10px;
+        display: block;
+        float: left;
+        padding:1px 5px 1px 5px;  
+        width: 20%;
+    }
+    .btn-secondary{
+        margin-top: 20px;
+    }
+    
+    .features {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+        width: 90%;
+        margin: 7%;
+    }
+    
+}
+.features {
+    padding: 3%;
+    background-color: #171717; /* Dark background */
+    color: #E0E0E0; /* Light gray text */
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    margin: 7%;
+    border: 1px solid white;
+}
+
+
+p.feat-text{
+    font-size: 25px;
+}
+h2.feat-head{
+    font-size: 30px;
+}
+
+i{
+    size: 50%;
+}
+
+img{
+    width: 400px;
+    border-radius: 5px;
+}
+
+img:hover{
+    width: 430px;
+    transition: 0.5s;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+a{
+    text-decoration: none;
+}
+.end{
+    color: lightblue;
+}
+.end:hover{
+    color: gold;
+}
+
+.foot{
+    background-color: black;
+    padding: 10%;
+    text-align: center;
+}
+
+.foot-text{
+    font-size: 30px;
+}
+
+.text{
+    font-size: 24px;
+    color: #000;
+}
+
+.text:hover{
+    color: #1da1f2;
+}
+
+#nu, #nuu, #nuuu{
+    font-size: 70px;
+}
+
+.facebook, .telegram, .x, .ig, .ytube, .linkedin{
+    margin-left: 5px;
+    font-size: 30px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.telegram:hover{
+    color: #00aaff;
+}
+.fa-facebook:hover{
+    color: #3b5998;
+}
+.fa-x:hover{
+    color: #1da1f2;
+    transform: rotate(10deg);
+}
+.fa-instagram:hover{
+    color: #f56040;
+}
+.fa-youtube:hover{
+    color: #cc0000;
+}
+.fa-linkedin:hover{
+    color: #005582;
+}
